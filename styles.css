@@ -1,0 +1,50 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #000;
+  --panel: #fff;
+  --border: #ccc;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --text: #eaeaea;
+  --panel: #2c2c2c;
+  --border: #444;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.editor {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+textarea {
+  width: 50%;
+  height: 300px;
+  padding: 10px;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.preview {
+  width: 50%;
+  padding: 10px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  overflow-y: auto;
+}
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
